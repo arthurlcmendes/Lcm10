@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TasteText – Food Recipes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>TasteText</h1>
+    <p>Simple & Elegant Food Recipes</p>
+    <input 
+        type="text" 
+        id="searchBar" 
+        placeholder="Search recipes..." 
+        onkeyup="searchRecipes()"
+    >
+</header>
+
+<nav>
+    <ul>
+        <li onclick="showSection('home')">Home</li>
+        <li onclick="showSection('pasta')">Pasta</li>
+        <li onclick="showSection('salads')">Salads</li>
+        <li onclick="showSection('burgers')">Burgers</li>
+        <li onclick="showSection('desserts')">Desserts</li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="home" class="section active">
+    <h2>Welcome</h2>
+    <p>
+        TasteText is a beautifully organized food recipe website.
+        Each recipe includes detailed instructions and images, while
+        keeping a clean text-focused design.
+    </p>
+</section>
+
+<section id="pasta" class="section recipe-section">
+    <h2>Pasta Recipes</h2>
+
+    <article class="recipe">
+        <img src="https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-mediumSquareAt3X-v2.jpg" alt="Carbonara">
+        <h3>Spaghetti Carbonara</h3>
+        <p>
+            <strong>Ingredients:</strong> Spaghetti, eggs, pecorino cheese,
+            pancetta, black pepper, salt.
+        </p>
+        <p>
+            <strong>Instructions:</strong> Boil pasta until al dente. Cook pancetta
+            until crispy. Mix eggs with cheese. Combine hot pasta with pancetta,
+            remove from heat, stir in egg mixture, season with pepper.
+        </p>
+    </article>
+
+    <article class="recipe">
+        <img src="https://assets.epicurious.com/photos/5988e3458e3ab375fe3c0caf/1:1/w_3607,h_3607,c_limit/How-to-Make-Chicken-Alfredo-Pasta-hero-02082017.jpg" alt="Alfredo">
+        <h3>Penne Alfredo</h3>
+        <p>
+            <strong>Ingredients:</strong> Penne pasta, butter, heavy cream,
+            garlic, parmesan cheese, parsley.
+        </p>
+        <p>
+            <strong>Instructions:</strong> Cook pasta. Melt butter, sauté garlic,
+            add cream, simmer, mix cheese. Combine with pasta and garnish.
+        </p>
+    </article>
+</section>
+
+<section id="salads" class="section recipe-section">
+    <h2>Salad Recipes</h2>
+
+    <article class="recipe">
+        <img src="https://images.squarespace-cdn.com/content/v1/65ac88b1ebd11b02739158cb/b5650036-0f35-4022-8b12-4d18e5d34b33/NotaChefSF-Caesar-Salad-1.jpg" alt="Caesar Salad">
+        <h3>Caesar Salad</h3>
+        <p>
+            <strong>Ingredients:</strong> Romaine lettuce, croutons, parmesan,
+            anchovies, garlic, lemon juice, olive oil.
+        </p>
+        <p>
+            <strong>Instructions:</strong> Prepare dressing, toss lettuce with sauce,
+            add croutons and cheese, finish with grilled chicken if desired.
+        </p>
+    </article>
+</section>
+
+<section id="burgers" class="section recipe-section">
+    <h2>Burger Recipes</h2>
+
+    <article class="recipe">
+        <img src="https://blog-content.omahasteaks.com/wp-content/uploads/2022/06/blogwp_delmonico-burgers-with-marinated-mushrooms-scaled-1.jpg" alt="Burger">
+        <h3>Classic Beef Burger</h3>
+        <p>
+            <strong>Ingredients:</strong> Ground beef, salt, pepper, buns,
+            lettuce, tomato, cheddar cheese.
+        </p>
+        <p>
+            <strong>Instructions:</strong> Shape patties, season, grill until cooked,
+            toast buns, assemble with toppings.
+        </p>
+    </article>
+</section>
+
+<section id="desserts" class="section recipe-section">
+    <h2>Dessert Recipes</h2>
+
+    <article class="recipe">
+        <img src="https://i.ytimg.com/vi/qdxqip0Bgt8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCPjO2A80XRgLsPVseoe9Q8KzCccA" alt="Brownie">
+        <h3>Chocolate Brownies</h3>
+        <p>
+            <strong>Ingredients:</strong> Dark chocolate, butter, sugar,
+            eggs, flour, cocoa powder.
+        </p>
+        <p>
+            <strong>Instructions:</strong> Melt chocolate and butter, mix sugar and eggs,
+            fold in flour, bake at 180°C for 25 minutes.
+        </p>
+    </article>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 TasteText – Designed for Clean Reading</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
